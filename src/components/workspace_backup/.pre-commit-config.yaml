@@ -6,7 +6,7 @@ repos:
         args: ["--profile", "black"]
         verbose: true
   - repo: https://github.com/psf/black
-    rev: 21.12b0 # Replace with any tag/version: https://github.com/psf/black/tags
+    rev: 22.3.0 # Replace with any tag/version: https://github.com/psf/black/tags
     hooks:
       - id: black
         language_version: python3 # Should be a command that runs python3.7+
@@ -35,7 +35,7 @@ repos:
         ]
         verbose: true
   - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-    rev: v1.2.2
+    rev: v1.2.4
     hooks:
     - id: python-safety-dependencies-check
       verbose: true
@@ -66,7 +66,7 @@ repos:
           - "-s"
           - "mdl_style.rb"
   - repo: https://github.com/PyCQA/bandit
-    rev: '1.7.1'
+    rev: '1.7.4'
     hooks:
       - id: bandit
         entry: bandit
@@ -90,3 +90,5 @@ repos:
         pass_filenames: false
         always_run: true
         verbose: true
+
+files: ^src/components/workspace_backup/
