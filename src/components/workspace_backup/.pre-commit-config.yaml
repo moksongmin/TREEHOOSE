@@ -76,7 +76,7 @@ repos:
     hooks:
       - id: code-coverage-check
         name: code-coverage-check
-        entry: coverage run --source=./src -m pytest tests/
+        entry: sh -c 'cd src/components/workspace_backup && coverage run --source=./src -m pytest tests/'
         language: system
         pass_filenames: false
         always_run: true
@@ -85,7 +85,7 @@ repos:
     hooks:
       - id: code-coverage-report
         name: code-coverage-report
-        entry: coverage report --omit=*tests*,./app.py,./setup.py --fail-under=80
+        entry: sh -c 'cd src/components/workspace_backup && coverage report --omit=*tests*,./app.py,./setup.py --fail-under=80'
         language: system
         pass_filenames: false
         always_run: true
