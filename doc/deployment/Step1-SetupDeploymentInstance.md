@@ -40,7 +40,7 @@ sudo -iu ec2-user
 cd /home/ec2-user/tmp
 mkdir TREEHOOSE
 wget https://github.com/HicResearch/TREEHOOSE/archive/refs/tags/v0.0.1-alpha.tar.gz
-tar --strip-components=1 -xzf TREEHOOSE-0.0.1-alpha.tar.gz -C TREEHOOSE
+tar --strip-components=1 -xzf v0.0.1-alpha.tar.gz -C TREEHOOSE
 ```
 
 > Note: The installation process requires 3rd party
